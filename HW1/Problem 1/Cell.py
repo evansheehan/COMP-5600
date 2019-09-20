@@ -1,25 +1,29 @@
 import Queen
 
 class Cell:
-    cellID = -1
-    cellScore = -1
-    cellPos = [-1, -1]
+    cellID = int
+    cellScore = int
+    xPos = int 
+    yPos = int
     hasQueen = False
-    queenID = -1
 
-    def __init__(self, cellIDIn, cellScoreIn, cellPosIn):
-        self.cellID = cellIDIn
-        self.cellScore = cellScoreIn
-        self.cellPos = cellPosIn
+    def __init__(self, cellID, cellScore, xPos, yPos):
+        self.cellID = cellID
+        self.cellScore = cellScore
+        self.xPos = xPos
+        self.yPos = yPos
 
-    def getID(self):
+    def getCellID(self):
         return self.cellID
 
     def getScore(self):
         return self.cellScore
 
-    def getPos(self):
-        return self.cellPos
+    def getX(self):
+        return self.xPos
 
-    def getQueen(self):
-        return self.queen
+    def getY(self):
+        return self.yPos
+
+    def hasQueen(self):
+        return self.hasQueen
