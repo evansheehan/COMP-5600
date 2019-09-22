@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Queens",
+            "request": "launch",
+            "mainClass": "Queens",
+            "projectName": "Problem 1_49a19e07"
+        }
+    ]
+}
